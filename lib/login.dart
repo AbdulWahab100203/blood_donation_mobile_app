@@ -37,11 +37,11 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add login logic
+                // Navigator.pushNamed(context, '/request');
               },
               child: Text("Login"),
             ),
-            TextButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/signup');
               },

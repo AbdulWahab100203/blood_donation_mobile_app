@@ -140,7 +140,7 @@ class _SignupScreenState extends State<SignupScreen> {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Add signup logic
+                  Navigator.pushNamed(context, '/login');
                 },
                 child: Text("Sign Up"),
               ),

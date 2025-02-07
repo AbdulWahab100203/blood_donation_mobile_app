@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/request',
       title: 'Blood Donating App',
       routes: {
-        '/': (context) => LoginScreen(),
+        '/login': (context) => LoginScreen(),
         '/signup': (context) => SignupScreen(),
         '/request': (context) => RequestForBlood(),
       },

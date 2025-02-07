@@ -1,3 +1,4 @@
+import 'package:blooddonation/util/AppRoute.dart';
 import 'package:flutter/material.dart';
 
 class RequestForBlood extends StatelessWidget {
@@ -92,33 +93,13 @@ class RequestForBlood extends StatelessWidget {
                   print(value);
                 },
               ),
-
-              // SizedBox(height: 10),
-              // Text("Password"),
-              // TextField(
-              //   decoration: InputDecoration(border: OutlineInputBorder()),
-              //   obscureText: true,
-              // ),
-              // SizedBox(height: 10),
-              // Text("Confirm Password"),
-              // TextField(
-              //   decoration: InputDecoration(border: OutlineInputBorder()),
-              //   obscureText: true,
-              // ),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Add signup logic
+                  Navigator.pushNamed(context, Approute.LOGIN_PAGE);
                 },
                 child: Text("Submit"),
               ),
-              // SizedBox(height: 10),
-              // TextButton(
-              //   onPressed: () {
-              //     Navigator.pop(context);
-              //   },
-              //   child: Text("Already have an account? Login"),
-              // ),
             ],
           ),
         ),

@@ -1,3 +1,4 @@
+import 'package:blooddonation/util/AppRoute.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -16,7 +17,8 @@ class LoginScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Center(
-                child: Text("Welcome Back!", style: TextStyle(fontSize: 24))),
+                child: Text("Welcome To the Blood Donation Organization!",
+                    style: TextStyle(fontSize: 24))),
             SizedBox(height: 10),
             TextField(
               decoration: InputDecoration(
@@ -37,13 +39,13 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Navigator.pushNamed(context, '/request');
+                Navigator.pushNamed(context, Approute.REQUEST_PAGE);
               },
               child: Text("Login"),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/signup');
+                Navigator.pushNamed(context, Approute.SIGNUP_PAGE);
               },
               child: Text("Don't have an account? Sign Up"),
             ),
